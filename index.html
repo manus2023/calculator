@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="display">
+        <div>
+            <span id="display"></span>
+        </div>
+        <button class="remove"onclick="remove()">&#8592;</button>
+    </div>
+
+      <div class="buttons">
+        <button id="7" onclick="displayNumber(this.id)">7</button>
+        <button id="8" onclick="displayNumber(this.id)">8</button>
+        <button id="9" onclick="displayNumber(this.id)">9</button>
+        <button id="clear" class="clear" onclick="clearDisplay()" style="font-size: 20px;">Clear</button>
+      </div>
+
+      <div class="buttons">
+        <button id="4" onclick="displayNumber(this.id)">4</button>
+        <button id="5" onclick="displayNumber(this.id)">5</button>
+        <button id="6" onclick="displayNumber(this.id)">6</button>
+        <button id="+" class="specialChars" onclick="storeNumbers(this.id)">+</button>
+      </div>
+
+      <div class="buttons">
+        <button id="1" onclick="displayNumber(this.id)">1</button>
+        <button id="2" onclick="displayNumber(this.id)">2</button>
+        <button id="3" onclick="displayNumber(this.id)">3</button>
+        <button id="-" class="specialChars" onclick="storeNumbers(this.id)">-</button>
+      </div>
+
+      <div class="buttons">
+        <button id="0" onclick="displayNumber(this.id)">0</button>
+        <button id="x" class="specialChars" onclick="storeNumbers(this.id)">x</button>
+        <button id="/" class="specialChars" onclick="storeNumbers(this.id)">/</button>
+        <button id="=" class="operate" onclick="operate()">=</button>
+      </div>
+</body>
+
+<script src="index.js"></script>
+</html>
